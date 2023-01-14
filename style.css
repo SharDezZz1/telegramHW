@@ -193,16 +193,32 @@ h2 {
 .choose-card-wrapper {
     width: 60%;    
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .choose-card{
     width: 27%;
-    height: 300px;
+    height: max-content;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 .choose-card-text p {
     font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.choose-card-btn {
+    border-radius: 25px;
+    width: 130px;
+    border: none;
+    background-color: #E3B748;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
 }
 
 
