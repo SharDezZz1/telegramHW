@@ -154,12 +154,13 @@ h2 {
     color: white;
 }
 
-.secondary-block, .secondary-block-2 {
+.secondary-block,
+.secondary-block-2 {
     display: flex;
     width: 50%;
 }
 
-.secondary-block-2{
+.secondary-block-2 {
     justify-content: flex-end;
     border-left: 1px solid rgb(78, 78, 78);
 }
@@ -188,22 +189,24 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .choose-card-wrapper {
-    width: 60%;    
+    width: 80%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.choose-card{
-    width: 27%;
+.choose-card {
     height: max-content;
     border: 1px solid white;
     border-radius: 25px;
     padding: 20px;
+    min-width: 300px;
+    max-width: 320px;
 }
 
 .choose-card-text p {
@@ -221,7 +224,92 @@ h2 {
     height: 50px;
 }
 
+.prac-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.prac-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;   
+}
+
+.prac-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.prac-img-wrapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.prac-img {
+    height: 342px;
+    border-radius: 14px;
+}
+
+.prac-bigger-img {
+
+    height: 342px;
+    border-radius: 14px;
+}
+
+.prac-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.prac-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+#business {    
+    background:no-repeat url('images/prac-images/Rectangle\ 3652business.svg');
+    background-size: cover;
+}
+
+#partnership {
+    background: no-repeat url('images/prac-images/Rectangle\ 3651partner.svg');
+    background-size: cover;
+}
+
+#estate {
+    background: no-repeat url('images/prac-images/Rectangle\ 3653estate.svg');
+    background-size: cover;
+}
+
+#business2 {
+    background: no-repeat url('images/prac-images/Rectangle\ 3654busines2.svg');;
+    background-size: cover;
+}
+
+#landlord {
+    background: no-repeat url('images/prac-images/Rectangle\ 3656landlord.svg');
+    background-size: cover;
+}
+
+#elder {
+    background: no-repeat url('images/prac-images/Rectangle\ 3655elder.svg');
+    background-size: cover;
+}
 
 @media only screen and (max-width:639px) {
     main {
@@ -266,6 +354,16 @@ h2 {
 
     .gray-text {
         color: #c7c7c7 !important;
+    }
+    .prac-img-wrapper {
+        flex-wrap: wrap;
+    }
+    .prac-img {
+        width: 100%;
+    }
+    
+    .prac-bigger-img {
+        width: 100%;;
     }
 }
 
@@ -313,6 +411,19 @@ h2 {
     .gray-text {
         color: #c7c7c7 !important;
     }
+    .choose-card {
+        width: 50%;
+    }
+    .prac-img-wrapper {
+        flex-wrap: wrap;
+    }
+    .prac-img {
+        width: 100%;
+    }
+    
+    .prac-bigger-img {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:1025px) and (max-width:1259px) {
@@ -340,6 +451,19 @@ h2 {
     .text-wrapper h1 {
         font-weight: 500;
         font-size: 66px;
+    }
+    .choose-card {
+        width: 25%;
+    }
+    .prac-img-wrapper {
+        flex-wrap: wrap;
+    }
+    .prac-img {
+        width: 100%;
+    }
+    
+    .prac-bigger-img {
+        width: 100%;
     }
 }
 
@@ -369,6 +493,16 @@ h2 {
         font-weight: 500;
         font-size: 66px;
     }
+    .choose-card {
+        width: 25%;
+    }
+    .prac-img {
+        width: 30%;
+    }
+    
+    .prac-bigger-img {
+        width: 70%;
+    }
 }
 
 @media only screen and (min-width:1366px) {
@@ -396,5 +530,15 @@ h2 {
     .text-wrapper h1 {
         font-weight: 500;
         font-size: 66px;
+    }
+    .choose-card {
+        width: 25%;
+    }
+    .prac-img {
+        width: 30%;
+    }
+    
+    .prac-bigger-img {
+        width: 70%;
     }
 }
