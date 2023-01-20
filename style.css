@@ -18,9 +18,15 @@ header {
     padding-top: 10px;
 }
 
+section {
+    font-family: 'Roboto';
+}
+
 .header-wrapper {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav {
@@ -134,23 +140,17 @@ h2 {
 }
 
 .secondary-sect {
+    width: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin: 0 auto;
     height: 500px;
 }
 
-.secondary-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    width: 80%;
-
-}
 
 .secondary-block-wrapper {
     display: flex;
-    width: 80%;
+    width: 100%;
     color: white;
 }
 
@@ -185,6 +185,8 @@ h2 {
 }
 
 .choose-us {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,7 +195,7 @@ h2 {
 }
 
 .choose-card-wrapper {
-    width: 80%;
+    width: 100%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -201,6 +203,7 @@ h2 {
 }
 
 .choose-card {
+    max-width: 300px;
     height: max-content;
     border: 1px solid white;
     border-radius: 25px;
@@ -224,92 +227,316 @@ h2 {
     height: 50px;
 }
 
-.prac-area {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.prac {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Roboto';
 }
 
-.prac-content-wrapper {
+.prac-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;   
 }
 
-.prac-cards-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.prac-wrapper {
     width: 100%;
-}
-
-.prac-img-wrapper {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-}
-
-.prac-img {
-    height: 342px;
-    border-radius: 14px;
-}
-
-.prac-bigger-img {
-
-    height: 342px;
-    border-radius: 14px;
-}
-
-.prac-text {
-    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    height: 100%;
+    gap: 20px;
+}
+
+.prac-line {
     width: 100%;
-    font-family: 'Roboto';
+    min-height: 340px;
+    display: flex;
+    gap: 20px;
+}
+
+.prac-line-reversed {
+    flex-direction: row-reverse;
+}
+
+.prac-card {
+    position: relative;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+}
+
+.prac-card-title {
+    width: 100%;
+    position: absolute;
+    bottom: 41px;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
+    line-height: 24px;
+    color: #fffbf2;
+    text-align: center;
 }
 
-.prac-text-wrapper {
+.prac-left-card {
+    width: 70%;
+    background-image: url(images/prac-images/Rectangle\ 3652business.png);
+}
+
+.prac-right-card {
+    width: 30%;
+    background-image: url(images/prac-images/Rectangle\ 3651partner.png);
+}
+
+.clients {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.clients-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-title {
+    width: 30%;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+}
+
+.btn-left {
+    background-image: url(images/Down\ 1arrow.svg);
+}
+
+.btn-right {
+    background-image: url(images/Down\ 1arrow.svg);
+    transform: rotate(180deg);
+}
+
+.btn:hover {
+    background-color: #E3B748;
+}
+
+.clients-card-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.clients-card {
+    font-family: 'Roboto';
+    position: relative;
+    width: 300px;
+    min-width: 300px;
+    border: 1px solid #ffffff1a;
+    border-radius: 14px;
+    padding: 30px;
+}
+
+.card-active {
+    background-color: #2E2E2E;
+}
+
+.card-desc {
+    color: white;
+}
+
+.corner-num {
+    position: absolute;
+    z-index: 6;
+    right: 20px;
+    top: 20px;
+}
+
+.clients-card p {
+    margin: 0;
+}
+
+.team {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-card {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.team-card:hover {
+    background-color: #E3B748;
+}
+
+.team-card-img {
+    display: flex;
+    align-items: center;
+}
+
+.team-card-text {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.team-card-text p,
+h2 {
+    margin: 0;
+}
+
+.faq {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.faq-wrapper {
+    display: flex;
+}
+
+
+.left-faq {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.right-faq {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-case {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #d9d9d97e;
+}
+
+.faq-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #E3B748;
+    border-radius: 50px;
+    border: none;
+}
+
+.newsletter {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #47474780;
+}
+
+.newsletter-title {
+    text-align: center;
+}
+
+.newsletter-form {
     display: flex;
     justify-content: center;
+    gap: 10px;
+    width: 60%;
+}
+
+.newsletter-form input {
+    height: 50px;
+    width: 40%;
+    padding-left: 20px;
+    border: none;
+}
+
+.newsletter-btn {
+    width: 20%;
+    border-radius: 0 14px 14px 0;
+    background-color: #E3B748;
+    border: none;
+}
+
+.bordered-input {
+    border-radius: 14px 0 0 14px;
+    
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    height: 30%;
+    justify-content: space-evenly;
+    height: 50%;
+    gap: 50px;
+    font-family: 'Roboro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-#business {    
-    background:no-repeat url('images/prac-images/Rectangle\ 3652business.svg');
-    background-size: cover;
+.social {
+    display: flex;
+    gap: 20px;
 }
 
-#partnership {
-    background: no-repeat url('images/prac-images/Rectangle\ 3651partner.svg');
-    background-size: cover;
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50%;
+    gap: 20px;
 }
 
-#estate {
-    background: no-repeat url('images/prac-images/Rectangle\ 3653estate.svg');
-    background-size: cover;
+.copyright a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 
-#business2 {
-    background: no-repeat url('images/prac-images/Rectangle\ 3654busines2.svg');;
-    background-size: cover;
-}
 
-#landlord {
-    background: no-repeat url('images/prac-images/Rectangle\ 3656landlord.svg');
-    background-size: cover;
-}
-
-#elder {
-    background: no-repeat url('images/prac-images/Rectangle\ 3655elder.svg');
-    background-size: cover;
-}
 
 @media only screen and (max-width:639px) {
     main {
@@ -317,8 +544,6 @@ h2 {
     }
 
     .header-wrapper {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -352,18 +577,8 @@ h2 {
         font-size: 50px;
     }
 
-    .gray-text {
-        color: #c7c7c7 !important;
-    }
-    .prac-img-wrapper {
-        flex-wrap: wrap;
-    }
-    .prac-img {
-        width: 100%;
-    }
-    
-    .prac-bigger-img {
-        width: 100%;;
+    .main-gray-text {
+        color: #c7c7c7;
     }
 }
 
@@ -373,8 +588,6 @@ h2 {
     }
 
     .header-wrapper {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -408,22 +621,10 @@ h2 {
         font-size: 50px;
     }
 
-    .gray-text {
-        color: #c7c7c7 !important;
+    .main-gray-text {
+        color: #c7c7c7;
     }
-    .choose-card {
-        width: 50%;
-    }
-    .prac-img-wrapper {
-        flex-wrap: wrap;
-    }
-    .prac-img {
-        width: 100%;
-    }
-    
-    .prac-bigger-img {
-        width: 100%;
-    }
+
 }
 
 @media only screen and (min-width:1025px) and (max-width:1259px) {
@@ -434,8 +635,6 @@ h2 {
     }
 
     .header-wrapper {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -452,19 +651,7 @@ h2 {
         font-weight: 500;
         font-size: 66px;
     }
-    .choose-card {
-        width: 25%;
-    }
-    .prac-img-wrapper {
-        flex-wrap: wrap;
-    }
-    .prac-img {
-        width: 100%;
-    }
-    
-    .prac-bigger-img {
-        width: 100%;
-    }
+
 }
 
 @media only screen and (min-width:1260px) and (max-width:1365px) {
@@ -475,8 +662,6 @@ h2 {
     }
 
     .header-wrapper {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -493,16 +678,7 @@ h2 {
         font-weight: 500;
         font-size: 66px;
     }
-    .choose-card {
-        width: 25%;
-    }
-    .prac-img {
-        width: 30%;
-    }
-    
-    .prac-bigger-img {
-        width: 70%;
-    }
+
 }
 
 @media only screen and (min-width:1366px) {
@@ -513,8 +689,6 @@ h2 {
     }
 
     .header-wrapper {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -531,14 +705,25 @@ h2 {
         font-weight: 500;
         font-size: 66px;
     }
-    .choose-card {
-        width: 25%;
+
+}
+
+@media only screen and (max-width: 1140px) {
+    .prac-right-card {
+        width: 100%;
+        min-height: 340px;
     }
-    .prac-img {
-        width: 30%;
+
+    .prac-left-card {
+        width: 100%;
+        min-height: 340px;
     }
-    
-    .prac-bigger-img {
-        width: 70%;
+
+    .prac-line {
+        flex-direction: column;
+    }
+
+    .prac-line-reversed {
+        flex-direction: column-reverse;
     }
 }
